@@ -1,9 +1,19 @@
 const express = require("express")
-const cockieParser = require("cookie-parser")
+const cookieParser = require("cookie-parser")
+const cors = require("cors")
+
+
+
 const app = express()
 
 app.use(express.json())
-app.use(cockieParser())
+app.use(cookieParser())
+app.use(cors({
+     origin: "http://localhost:5173",
+     credentials: true
+}))
+
+
  /* required all the routes here */
 const authRouter = require("./routes/auth.routes.js")
 
