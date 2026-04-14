@@ -25,7 +25,8 @@ const handleSubmit =   async (e) => {
 
   if(loading) {
     return (<main>
-        <h1>Loading...</h1>
+        <h1>.,😂😂😂😂😂
+          Wait Mosharraf babu..</h1>
     </main>)
   }
 
