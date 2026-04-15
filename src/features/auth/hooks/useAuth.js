@@ -3,7 +3,7 @@ import  {useContext } from "react";
 
 import { AuthContext } from "../auth.context";
 
-    import { login,register,logout,getMe} from "../services/auth.api";   
+    import {login,register,logout,getMe} from "../services/auth.api";   
 
 
 
@@ -18,7 +18,7 @@ export const useAuth = () => {
 
 
             try{
-            const date = await login({email,password})
+            const data = await login({email,password})
             setUser(data.user)
             setLoading(false)
          } catch (err) {
